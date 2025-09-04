@@ -86,6 +86,32 @@
           }
         }
       }
+    },
+    "ngx-pagination-andy": {
+      "projectType": "library",
+      "root": "projects/ngx-pagination-andy",
+      "sourceRoot": "projects/ngx-pagination-andy/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-pagination-andy/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-pagination-andy/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ngx-pagination-andy/tsconfig.spec.json"
+          }
+        }
+      }
     }
   }
 }
