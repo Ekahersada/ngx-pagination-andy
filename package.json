@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,12 +12,11 @@
     "link:app": "npm link ngx-pagination-andy",
     "unlink:lib": "cd dist/ngx-pagination-andy && npm unlink && npm unlink ngx-pagination-andy && npm install",
     "dev:lib": "npm run build:lib && npm run link:lib && npm run link:app",
-
-     "buildlib": "ng-packagr -p ng-package.json",
-  "release:patch": "npm version patch && npm run buildlib && npm publish --access public",
-  "release:minor": "npm version minor && npm run buildlib && npm publish --access public",
-  "release:major": "npm version major && npm run buildlib && npm publish --access public",
-  "build-lib": "ng build ngx-pagination-andy && cd dist/ngx-pagination-andy && npm publish --access public"
+    "buildlib": "ng-packagr -p ng-package.json",
+    "release:patch": "npm version patch && npm run buildlib && npm publish --access public",
+    "release:minor": "npm version minor && npm run buildlib && npm publish --access public",
+    "release:major": "npm version major && npm run buildlib && npm publish --access public",
+    "build-lib": "ng build ngx-pagination-andy && cd dist/ngx-pagination-andy && npm publish --access public"
   },
   "private": true,
   "dependencies": {
