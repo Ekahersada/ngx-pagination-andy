@@ -16,7 +16,6 @@ export interface Paginator_m {
   selector: 'pagination',
   standalone: true,
   template: `
-  tesswewedsdsds
     <div class="pagination-wrapper">
       <!-- Page size selector -->
 
@@ -41,7 +40,7 @@ export interface Paginator_m {
       <!-- Pagination -->
       <nav class="pagination-container">
         <button
-          class="page-btn"
+          class="page-btn first"
           [disabled]="data.page == 1"
           (click)="goToPage(1)"
         >
@@ -106,7 +105,7 @@ export interface Paginator_m {
         </button>
 
         <button
-          class="page-btn"
+          class="page-btn last"
           [disabled]="data.page === totalPages"
           (click)="goToPage(totalPages)"
         >
