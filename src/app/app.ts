@@ -10,7 +10,7 @@ import { PaginationComponent } from 'ngx-pagination-andy';
 })
 export class App {
   protected title = 'my-app';
-  users = Array.from({ length: 20 }, (_, i) => `User ${i + 1}`);
+  users = Array.from({ length: 100 }, (_, i) => `User ${i + 1}`);
   pageSize = 5;
   page = 1;
 

@@ -6,6 +6,6 @@
   }
 </ul>
 
-<app-pagination [showSelector]="true" [data]="{ page: page, limit: pageSize, totalItem: users.length }"
+<pagination [showSelector]="true" [data]="{ page: page, limit: pageSize, totalItem: users.length }"
   (pageChange)="onPageChange($event)">
-</app-pagination>
+</pagination>

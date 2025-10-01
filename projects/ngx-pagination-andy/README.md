@@ -43,6 +43,10 @@ npm install ngx-pagination-andy
 Lihat file `pagination.component.ts` untuk detail properti dan event terbaru.
 
 
+## Contoh Gambar
+
+![Contoh Pagination](./assets/images.png)
+
 
 ## 📜 Lisensi
 MIT © [EkaH]
