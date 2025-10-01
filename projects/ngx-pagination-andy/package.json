@@ -1,6 +1,6 @@
 {
   "name": "ngx-pagination-andy",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "peerDependencies": {
     "@angular/common": "^20.1.0",
     "@angular/core": "^20.1.0"

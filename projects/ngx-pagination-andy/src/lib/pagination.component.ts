@@ -116,7 +116,7 @@ export interface Paginator_m {
   `,
   styleUrls: ['./pagination.component.scss'],
 })
-export class PaginationComponent {
+export class PaginationAndy {
   @Input() customOpt: number[] = [10, 20, 50, 100];
   @Input() showSelector = false;
 

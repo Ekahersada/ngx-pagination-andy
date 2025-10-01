@@ -24,6 +24,21 @@ Komponen pagination untuk Angular dengan fitur terbaru.
 
 ## Cara Penggunaan
 
+Tambahkan import berikut pada modul Anda:
+
+```typescript
+import { PaginationAndy } from 'ngx-pagination-andy';
+
+@NgModule({
+   imports: [
+      PaginationAndy
+      // modul lain
+   ],
+   // ...
+})
+export class AppModule { }
+```
+
 ```typescript
 <pagination
    [data]="paginator",
@@ -45,7 +60,7 @@ Lihat file `pagination.component.ts` untuk detail properti dan event terbaru.
 
 ## Contoh Gambar
 
-![Contoh Pagination](./assets/images.png)
+![Contoh Pagination](https://github.com/Ekahersada/ngx-pagination-andy/blob/master/public/images.png)
 
 
 ## 📜 Lisensi

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PaginationComponent } from './pagination.component';
+import { PaginationAndy } from './pagination.component';
 
 @NgModule({
-  imports: [CommonModule, PaginationComponent],
-  exports: [PaginationComponent],
+  imports: [CommonModule, PaginationAndy],
+  exports: [PaginationAndy],
 })
-export class PaginationModule {}
+export class PaginationModule { }
