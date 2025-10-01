@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PaginationComponent } from 'ngx-pagination-andy';
+import { PaginationAndy } from 'ngx-pagination-andy';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PaginationComponent],
+  imports: [RouterOutlet, PaginationAndy],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
@@ -21,7 +21,9 @@ export class App {
 
   onPageChange(newPage: any) {
     console.log('Page changed to:', newPage);
-    this.page = newPage.page; // Assuming newPage is an object with a 'page' property
+    this.page = newPage.page;
+    this.pageSize = newPage.limit;
+    // Assuming newPage is an object with a 'page' property
     // this.page = newPage;
   }
 }
